@@ -1069,13 +1069,6 @@
       toggleFlip(card);
     }, { passive: false });
 
-  <script>
-  function toggleFlip(card){ card.classList.toggle("flipped"); }
-
-  document.querySelectorAll(".card").forEach(card => {
-    card.addEventListener("pointerup", () => toggleFlip(card));
-    card.addEventListener("click", () => toggleFlip(card));
-
     card.addEventListener("keydown", (e) => {
       if (e.key === "Enter" || e.key === " ") {
         e.preventDefault();
@@ -1084,3 +1077,6 @@
     });
   });
 </script>
+
+</body>
+</html>
