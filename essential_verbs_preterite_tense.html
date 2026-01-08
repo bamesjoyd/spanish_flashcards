@@ -1,0 +1,1084 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Spanish Verb Flashcards — Preterite (Irregulars in Red)</title>
+
+  <style>
+    :root { --card-w: 240px; --card-h: 200px; }
+
+    body{
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      background:#f5f5f5;
+      margin:0;
+      padding:2rem;
+      display:flex;
+      flex-wrap:wrap;
+      justify-content:center;
+      gap:1rem;
+    }
+
+    .card{
+      width:var(--card-w);
+      height:var(--card-h);
+      perspective:1000px;
+      cursor:pointer;
+      user-select:none;
+      -webkit-tap-highlight-color:transparent;
+      outline:none;
+    }
+
+    .card-inner{
+      width:100%;
+      height:100%;
+      position:relative;
+      transform-style:preserve-3d;
+      transition:transform 0.6s;
+      border-radius:14px;
+      box-shadow:0 8px 20px rgba(0,0,0,0.12);
+    }
+
+    .card.flipped .card-inner{ transform:rotateY(180deg); }
+
+    .card-face{
+      position:absolute;
+      inset:0;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:14px;
+      border-radius:14px;
+      backface-visibility:hidden;
+      -webkit-backface-visibility:hidden;
+    }
+
+    .front{
+      background:#ffffff;
+      font-size:1.6rem;
+      font-weight:800;
+      text-align:center;
+      color:#111827;
+    }
+
+    /* Irregular verbs: front text in red */
+    .front.irregular{
+      color:#b91c1c;
+    }
+
+    .back{
+      background:#111827;
+      color:#ffffff;
+      transform:rotateY(180deg);
+      font-size:1rem;
+      align-items:flex-start;
+      justify-content:flex-start;
+      text-align:left;
+    }
+
+    .content{
+      width:100%;
+      display:flex;
+      flex-direction:column;
+      gap:8px;
+    }
+
+    .definition{
+      font-size:1.05rem;
+      font-weight:800;
+      line-height:1.2;
+      padding-bottom:6px;
+      border-bottom:1px solid rgba(255,255,255,0.18);
+    }
+
+    .forms{
+      display:grid;
+      grid-template-columns:1fr;
+      gap:4px;
+      font-weight:650;
+      letter-spacing:0.2px;
+    }
+
+    .hint{
+      font-size:0.8rem;
+      opacity:0.7;
+      font-weight:500;
+      margin-top:2px;
+    }
+
+    @media (max-width:520px){
+      :root{ --card-w:92vw; --card-h:210px; }
+      body{ padding:1rem; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- =======================
+       PRETERITE FLASHCARDS
+       Same verb list, preterite.
+       Irregular verbs (same set you flagged before) are red on the front.
+       ======================= -->
+
+  <!-- A -->
+
+  <!-- Abrir -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Abrir"><div class="card-inner">
+    <div class="card-face front">Abrir</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to open</div>
+      <div class="forms"><div>abrí</div><div>abriste</div><div>abrió</div><div>abrimos</div><div>abrieron</div><div>abrieron</div></div>
+      <div class="hint">(preterite)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Acostarse (irregular present; keep red) -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Acostarse"><div class="card-inner">
+    <div class="card-face front irregular">Acostarse</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to go to bed</div>
+      <div class="forms"><div>me acosté</div><div>te acostaste</div><div>se acostó</div><div>nos acostamos</div><div>se acostaron</div><div>se acostaron</div></div>
+      <div class="hint">(preterite)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Aprender -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Aprender"><div class="card-inner">
+    <div class="card-face front">Aprender</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to learn</div>
+      <div class="forms"><div>aprendí</div><div>aprendiste</div><div>aprendió</div><div>aprendimos</div><div>aprendieron</div><div>aprendieron</div></div>
+      <div class="hint">(preterite)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Arreglar -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Arreglar"><div class="card-inner">
+    <div class="card-face front">Arreglar</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to fix / arrange</div>
+      <div class="forms"><div>arreglé</div><div>arreglaste</div><div>arregló</div><div>arreglamos</div><div>arreglaron</div><div>arreglaron</div></div>
+      <div class="hint">(preterite)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Ayudar -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Ayudar"><div class="card-inner">
+    <div class="card-face front">Ayudar</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to help</div>
+      <div class="forms"><div>ayudé</div><div>ayudaste</div><div>ayudó</div><div>ayudamos</div><div>ayudaron</div><div>ayudaron</div></div>
+      <div class="hint">(preterite)</div>
+    </div></div>
+  </div></div>
+
+  <!-- B -->
+
+  <!-- Bailar -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Bailar"><div class="card-inner">
+    <div class="card-face front">Bailar</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to dance</div>
+      <div class="forms"><div>bailé</div><div>bailaste</div><div>bailó</div><div>bailamos</div><div>bailaron</div><div>bailaron</div></div>
+      <div class="hint">(preterite)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Beber -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Beber"><div class="card-inner">
+    <div class="card-face front">Beber</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to drink</div>
+      <div class="forms"><div>bebí</div><div>bebiste</div><div>bebió</div><div>bebimos</div><div>bebieron</div><div>bebieron</div></div>
+      <div class="hint">(preterite)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Buscar -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Buscar"><div class="card-inner">
+    <div class="card-face front">Buscar</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to look for</div>
+      <div class="forms"><div>busqué</div><div>buscaste</div><div>buscó</div><div>buscamos</div><div>buscaron</div><div>buscaron</div></div>
+      <div class="hint">(preterite)</div>
+    </div></div>
+  </div></div>
+
+  <!-- C -->
+
+  <!-- Caminar -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Caminar"><div class="card-inner">
+    <div class="card-face front">Caminar</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to walk</div>
+      <div class="forms"><div>caminé</div><div>caminaste</div><div>caminó</div><div>caminamos</div><div>caminaron</div><div>caminaron</div></div>
+      <div class="hint">(preterite)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Cargar -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Cargar"><div class="card-inner">
+    <div class="card-face front">Cargar</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to carry / load / charge</div>
+      <div class="forms"><div>cargué</div><div>cargaste</div><div>cargó</div><div>cargamos</div><div>cargaron</div><div>cargaron</div></div>
+      <div class="hint">(preterite)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Cerrar (irregular present; keep red) -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Cerrar"><div class="card-inner">
+    <div class="card-face front irregular">Cerrar</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to close</div>
+      <div class="forms"><div>cerré</div><div>cerraste</div><div>cerró</div><div>cerramos</div><div>cerraron</div><div>cerraron</div></div>
+      <div class="hint">(preterite)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Cocinar -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Cocinar"><div class="card-inner">
+    <div class="card-face front">Cocinar</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to cook</div>
+      <div class="forms"><div>cociné</div><div>cocinaste</div><div>cocinó</div><div>cocinamos</div><div>cocinaron</div><div>cocinaron</div></div>
+      <div class="hint">(preterite)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Comer -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Comer"><div class="card-inner">
+    <div class="card-face front">Comer</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to eat</div>
+      <div class="forms"><div>comí</div><div>comiste</div><div>comió</div><div>comimos</div><div>comieron</div><div>comieron</div></div>
+      <div class="hint">(preterite)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Comprar -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Comprar"><div class="card-inner">
+    <div class="card-face front">Comprar</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to buy</div>
+      <div class="forms"><div>compré</div><div>compraste</div><div>compró</div><div>compramos</div><div>compraron</div><div>compraron</div></div>
+      <div class="hint">(preterite)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Conocer (irregular present; keep red) -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Conocer"><div class="card-inner">
+    <div class="card-face front irregular">Conocer</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to know (a person/place)</div>
+      <div class="forms"><div>conocí</div><div>conociste</div><div>conoció</div><div>conocimos</div><div>conocieron</div><div>conocieron</div></div>
+      <div class="hint">(preterite)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Contar (irregular present; keep red) -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Contar"><div class="card-inner">
+    <div class="card-face front irregular">Contar</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to count / to tell</div>
+      <div class="forms"><div>conté</div><div>contaste</div><div>contó</div><div>contamos</div><div>contaron</div><div>contaron</div></div>
+      <div class="hint">(preterite)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Contestar -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Contestar"><div class="card-inner">
+    <div class="card-face front">Contestar</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to answer</div>
+      <div class="forms"><div>contesté</div><div>contestaste</div><div>contestó</div><div>contestamos</div><div>contestaron</div><div>contestaron</div></div>
+      <div class="hint">(preterite)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Correr -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Correr"><div class="card-inner">
+    <div class="card-face front">Correr</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to run</div>
+      <div class="forms"><div>corrí</div><div>corriste</div><div>corrió</div><div>corrimos</div><div>corrieron</div><div>corrieron</div></div>
+      <div class="hint">(preterite)</div>
+    </div></div>
+  </div></div>
+
+  <!-- D -->
+
+  <!-- Dar (irregular) -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Dar"><div class="card-inner">
+    <div class="card-face front irregular">Dar</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to give</div>
+      <div class="forms"><div>di</div><div>diste</div><div>dio</div><div>dimos</div><div>dieron</div><div>dieron</div></div>
+      <div class="hint">(preterite — irregular)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Decir (irregular) -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Decir"><div class="card-inner">
+    <div class="card-face front irregular">Decir</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to say / to tell</div>
+      <div class="forms"><div>dije</div><div>dijiste</div><div>dijo</div><div>dijimos</div><div>dijeron</div><div>dijeron</div></div>
+      <div class="hint">(preterite — irregular)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Dejar -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Dejar"><div class="card-inner">
+    <div class="card-face front">Dejar</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to leave / to let</div>
+      <div class="forms"><div>dejé</div><div>dejaste</div><div>dejó</div><div>dejamos</div><div>dejaron</div><div>dejaron</div></div>
+      <div class="hint">(preterite)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Descansar -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Descansar"><div class="card-inner">
+    <div class="card-face front">Descansar</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to rest</div>
+      <div class="forms"><div>descansé</div><div>descansaste</div><div>descansó</div><div>descansamos</div><div>descansaron</div><div>descansaron</div></div>
+      <div class="hint">(preterite)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Despertar (irregular present; keep red) -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Despertar"><div class="card-inner">
+    <div class="card-face front irregular">Despertar</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to wake up</div>
+      <div class="forms"><div>desperté</div><div>despertaste</div><div>despertó</div><div>despertamos</div><div>despertaron</div><div>despertaron</div></div>
+      <div class="hint">(preterite)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Dormir (irregular) -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Dormir"><div class="card-inner">
+    <div class="card-face front irregular">Dormir</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to sleep</div>
+      <div class="forms"><div>dormí</div><div>dormiste</div><div>durmió</div><div>dormimos</div><div>durmieron</div><div>durmieron</div></div>
+      <div class="hint">(preterite — irregular 3rd persons)</div>
+    </div></div>
+  </div></div>
+
+  <!-- E -->
+
+  <!-- Empezar (irregular spelling change) -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Empezar"><div class="card-inner">
+    <div class="card-face front irregular">Empezar</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to begin / to start</div>
+      <div class="forms"><div>empecé</div><div>empezaste</div><div>empezó</div><div>empezamos</div><div>empezaron</div><div>empezaron</div></div>
+      <div class="hint">(preterite — irregular yo)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Encontrar (irregular present; keep red) -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Encontrar"><div class="card-inner">
+    <div class="card-face front irregular">Encontrar</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to find</div>
+      <div class="forms"><div>encontré</div><div>encontraste</div><div>encontró</div><div>encontramos</div><div>encontraron</div><div>encontraron</div></div>
+      <div class="hint">(preterite)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Enseñar -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Enseñar"><div class="card-inner">
+    <div class="card-face front">Enseñar</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to teach</div>
+      <div class="forms"><div>enseñé</div><div>enseñaste</div><div>enseñó</div><div>enseñamos</div><div>enseñaron</div><div>enseñaron</div></div>
+      <div class="hint">(preterite)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Entender (flagged irregular before; keep red) -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Entender"><div class="card-inner">
+    <div class="card-face front irregular">Entender</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to understand</div>
+      <div class="forms"><div>entendí</div><div>entendiste</div><div>entendió</div><div>entendimos</div><div>entendieron</div><div>entendieron</div></div>
+      <div class="hint">(preterite)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Escribir -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Escribir"><div class="card-inner">
+    <div class="card-face front">Escribir</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to write</div>
+      <div class="forms"><div>escribí</div><div>escribiste</div><div>escribió</div><div>escribimos</div><div>escribieron</div><div>escribieron</div></div>
+      <div class="hint">(preterite)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Escuchar -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Escuchar"><div class="card-inner">
+    <div class="card-face front">Escuchar</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to listen</div>
+      <div class="forms"><div>escuché</div><div>escuchaste</div><div>escuchó</div><div>escuchamos</div><div>escucharon</div><div>escucharon</div></div>
+      <div class="hint">(preterite)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Esperar -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Esperar"><div class="card-inner">
+    <div class="card-face front">Esperar</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to wait / to hope</div>
+      <div class="forms"><div>esperé</div><div>esperaste</div><div>esperó</div><div>esperamos</div><div>esperaron</div><div>esperaron</div></div>
+      <div class="hint">(preterite)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Estar (irregular) -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Estar"><div class="card-inner">
+    <div class="card-face front irregular">Estar</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to be (state / temporary)</div>
+      <div class="forms"><div>estuve</div><div>estuviste</div><div>estuvo</div><div>estuvimos</div><div>estuvieron</div><div>estuvieron</div></div>
+      <div class="hint">(preterite — irregular)</div>
+    </div></div>
+  </div></div>
+
+  <!-- G -->
+
+  <!-- Ganar -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Ganar"><div class="card-inner">
+    <div class="card-face front">Ganar</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to win / to earn</div>
+      <div class="forms"><div>gané</div><div>ganaste</div><div>ganó</div><div>ganamos</div><div>ganaron</div><div>ganaron</div></div>
+      <div class="hint">(preterite)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Gastar -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Gastar"><div class="card-inner">
+    <div class="card-face front">Gastar</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to spend (money)</div>
+      <div class="forms"><div>gasté</div><div>gastaste</div><div>gastó</div><div>gastamos</div><div>gastaron</div><div>gastaron</div></div>
+      <div class="hint">(preterite)</div>
+    </div></div>
+  </div></div>
+
+  <!-- H -->
+
+  <!-- Haber (irregular) -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Haber"><div class="card-inner">
+    <div class="card-face front irregular">Haber</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to have (auxiliary)</div>
+      <div class="forms"><div>hube</div><div>hubiste</div><div>hubo</div><div>hubimos</div><div>hubieron</div><div>hubieron</div></div>
+      <div class="hint">(preterite — irregular)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Hablar -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Hablar"><div class="card-inner">
+    <div class="card-face front">Hablar</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to speak / to talk</div>
+      <div class="forms"><div>hablé</div><div>hablaste</div><div>habló</div><div>hablamos</div><div>hablaron</div><div>hablaron</div></div>
+      <div class="hint">(preterite)</div>
+    </div></div>
+  </div></div>
+
+  <!-- I -->
+
+  <!-- Invitar -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Invitar"><div class="card-inner">
+    <div class="card-face front">Invitar</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to invite</div>
+      <div class="forms"><div>invité</div><div>invitaste</div><div>invitó</div><div>invitamos</div><div>invitaron</div><div>invitaron</div></div>
+      <div class="hint">(preterite)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Ir (irregular) -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Ir"><div class="card-inner">
+    <div class="card-face front irregular">Ir</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to go</div>
+      <div class="forms"><div>fui</div><div>fuiste</div><div>fue</div><div>fuimos</div><div>fueron</div><div>fueron</div></div>
+      <div class="hint">(preterite — irregular)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Irse (irregular) -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Irse"><div class="card-inner">
+    <div class="card-face front irregular">Irse</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to leave / to go away</div>
+      <div class="forms"><div>me fui</div><div>te fuiste</div><div>se fue</div><div>nos fuimos</div><div>se fueron</div><div>se fueron</div></div>
+      <div class="hint">(preterite — irregular)</div>
+    </div></div>
+  </div></div>
+
+  <!-- J -->
+
+  <!-- Jalar -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Jalar"><div class="card-inner">
+    <div class="card-face front">Jalar</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to pull</div>
+      <div class="forms"><div>jalé</div><div>jalaste</div><div>jaló</div><div>jalamos</div><div>jalaron</div><div>jalaron</div></div>
+      <div class="hint">(preterite)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Jugar (irregular spelling change yo) -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Jugar"><div class="card-inner">
+    <div class="card-face front irregular">Jugar</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to play (a game / sport)</div>
+      <div class="forms"><div>jugué</div><div>jugaste</div><div>jugó</div><div>jugamos</div><div>jugaron</div><div>jugaron</div></div>
+      <div class="hint">(preterite — irregular yo)</div>
+    </div></div>
+  </div></div>
+
+  <!-- L -->
+
+  <!-- Lavar -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Lavar"><div class="card-inner">
+    <div class="card-face front">Lavar</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to wash</div>
+      <div class="forms"><div>lavé</div><div>lavaste</div><div>lavó</div><div>lavamos</div><div>lavaron</div><div>lavaron</div></div>
+      <div class="hint">(preterite)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Levantarse (irregular present; keep red) -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Levantarse"><div class="card-inner">
+    <div class="card-face front irregular">Levantarse</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to get up</div>
+      <div class="forms"><div>me levanté</div><div>te levantaste</div><div>se levantó</div><div>nos levantamos</div><div>se levantaron</div><div>se levantaron</div></div>
+      <div class="hint">(preterite)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Llegar -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Llegar"><div class="card-inner">
+    <div class="card-face front">Llegar</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to arrive</div>
+      <div class="forms"><div>llegué</div><div>llegaste</div><div>llegó</div><div>llegamos</div><div>llegaron</div><div>llegaron</div></div>
+      <div class="hint">(preterite)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Llevar -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Llevar"><div class="card-inner">
+    <div class="card-face front">Llevar</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to carry / to take / to wear</div>
+      <div class="forms"><div>llevé</div><div>llevaste</div><div>llevó</div><div>llevamos</div><div>llevaron</div><div>llevaron</div></div>
+      <div class="hint">(preterite)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Limpiar -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Limpiar"><div class="card-inner">
+    <div class="card-face front">Limpiar</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to clean</div>
+      <div class="forms"><div>limpié</div><div>limpiaste</div><div>limpió</div><div>limpiamos</div><div>limpiaron</div><div>limpiaron</div></div>
+      <div class="hint">(preterite)</div>
+    </div></div>
+  </div></div>
+
+  <!-- M -->
+
+  <!-- Manejar -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Manejar"><div class="card-inner">
+    <div class="card-face front">Manejar</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to drive / to handle</div>
+      <div class="forms"><div>manejé</div><div>manejaste</div><div>manejó</div><div>manejamos</div><div>manejaron</div><div>manejaron</div></div>
+      <div class="hint">(preterite)</div>
+    </div></div>
+  </div></div>
+
+  <!-- N -->
+
+  <!-- Necesitar -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Necesitar"><div class="card-inner">
+    <div class="card-face front">Necesitar</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to need</div>
+      <div class="forms"><div>necesité</div><div>necesitaste</div><div>necesitó</div><div>necesitamos</div><div>necesitaron</div><div>necesitaron</div></div>
+      <div class="hint">(preterite)</div>
+    </div></div>
+  </div></div>
+
+  <!-- O -->
+
+  <!-- Oír (irregular) -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Oír"><div class="card-inner">
+    <div class="card-face front irregular">Oír</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to hear</div>
+      <div class="forms"><div>oí</div><div>oíste</div><div>oyó</div><div>oímos</div><div>oyeron</div><div>oyeron</div></div>
+      <div class="hint">(preterite — irregular)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Olvidar -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Olvidar"><div class="card-inner">
+    <div class="card-face front">Olvidar</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to forget</div>
+      <div class="forms"><div>olvidé</div><div>olvidaste</div><div>olvidó</div><div>olvidamos</div><div>olvidaron</div><div>olvidaron</div></div>
+      <div class="hint">(preterite)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Ordenar -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Ordenar"><div class="card-inner">
+    <div class="card-face front">Ordenar</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to order / to organize</div>
+      <div class="forms"><div>ordené</div><div>ordenaste</div><div>ordenó</div><div>ordenamos</div><div>ordenaron</div><div>ordenaron</div></div>
+      <div class="hint">(preterite)</div>
+    </div></div>
+  </div></div>
+
+  <!-- P -->
+
+  <!-- Pagar -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Pagar"><div class="card-inner">
+    <div class="card-face front">Pagar</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to pay</div>
+      <div class="forms"><div>pagué</div><div>pagaste</div><div>pagó</div><div>pagamos</div><div>pagaron</div><div>pagaron</div></div>
+      <div class="hint">(preterite)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Pasar -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Pasar"><div class="card-inner">
+    <div class="card-face front">Pasar</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to pass / to spend (time)</div>
+      <div class="forms"><div>pasé</div><div>pasaste</div><div>pasó</div><div>pasamos</div><div>pasaron</div><div>pasaron</div></div>
+      <div class="hint">(preterite)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Pedir (irregular preterite 3rd persons; keep red) -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Pedir"><div class="card-inner">
+    <div class="card-face front irregular">Pedir</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to ask for / to order</div>
+      <div class="forms"><div>pedí</div><div>pediste</div><div>pidió</div><div>pedimos</div><div>pidieron</div><div>pidieron</div></div>
+      <div class="hint">(preterite — irregular 3rd persons)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Pensar (keep red) -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Pensar"><div class="card-inner">
+    <div class="card-face front irregular">Pensar</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to think</div>
+      <div class="forms"><div>pensé</div><div>pensaste</div><div>pensó</div><div>pensamos</div><div>pensaron</div><div>pensaron</div></div>
+      <div class="hint">(preterite)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Platicar -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Platicar"><div class="card-inner">
+    <div class="card-face front">Platicar</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to chat / to talk</div>
+      <div class="forms"><div>platiqué</div><div>platicaste</div><div>platicó</div><div>platicamos</div><div>platicaron</div><div>platicaron</div></div>
+      <div class="hint">(preterite)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Poner (irregular) -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Poner"><div class="card-inner">
+    <div class="card-face front irregular">Poner</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to put / to place</div>
+      <div class="forms"><div>puse</div><div>pusiste</div><div>puso</div><div>pusimos</div><div>pusieron</div><div>pusieron</div></div>
+      <div class="hint">(preterite — irregular)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Poder (irregular) -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Poder"><div class="card-inner">
+    <div class="card-face front irregular">Poder</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to be able to / can</div>
+      <div class="forms"><div>pude</div><div>pudiste</div><div>pudo</div><div>pudimos</div><div>pudieron</div><div>pudieron</div></div>
+      <div class="hint">(preterite — irregular)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Preferir (preterite stem change in 3rd persons) -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Preferir"><div class="card-inner">
+    <div class="card-face front irregular">Preferir</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to prefer</div>
+      <div class="forms"><div>preferí</div><div>preferiste</div><div>prefirió</div><div>preferimos</div><div>prefirieron</div><div>prefirieron</div></div>
+      <div class="hint">(preterite — irregular 3rd persons)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Preguntar -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Preguntar"><div class="card-inner">
+    <div class="card-face front">Preguntar</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to ask (a question)</div>
+      <div class="forms"><div>pregunté</div><div>preguntaste</div><div>preguntó</div><div>preguntamos</div><div>preguntaron</div><div>preguntaron</div></div>
+      <div class="hint">(preterite)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Preparar -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Preparar"><div class="card-inner">
+    <div class="card-face front">Preparar</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to prepare</div>
+      <div class="forms"><div>preparé</div><div>preparaste</div><div>preparó</div><div>preparamos</div><div>prepararon</div><div>prepararon</div></div>
+      <div class="hint">(preterite)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Presentar -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Presentar"><div class="card-inner">
+    <div class="card-face front">Presentar</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to present / to introduce</div>
+      <div class="forms"><div>presenté</div><div>presentaste</div><div>presentó</div><div>presentamos</div><div>presentaron</div><div>presentaron</div></div>
+      <div class="hint">(preterite)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Probar (keep red) -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Probar"><div class="card-inner">
+    <div class="card-face front irregular">Probar</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to try / to taste</div>
+      <div class="forms"><div>probé</div><div>probaste</div><div>probó</div><div>probamos</div><div>probaron</div><div>probaron</div></div>
+      <div class="hint">(preterite)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Q -->
+
+  <!-- Querer (irregular) -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Querer"><div class="card-inner">
+    <div class="card-face front irregular">Querer</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to want / to love</div>
+      <div class="forms"><div>quise</div><div>quisiste</div><div>quiso</div><div>quisimos</div><div>quisieron</div><div>quisieron</div></div>
+      <div class="hint">(preterite — irregular)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Quitar -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Quitar"><div class="card-inner">
+    <div class="card-face front">Quitar</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to remove / to take off</div>
+      <div class="forms"><div>quité</div><div>quitaste</div><div>quitó</div><div>quitamos</div><div>quitaron</div><div>quitaron</div></div>
+      <div class="hint">(preterite)</div>
+    </div></div>
+  </div></div>
+
+  <!-- R -->
+
+  <!-- Recomendar (keep red) -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Recomendar"><div class="card-inner">
+    <div class="card-face front irregular">Recomendar</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to recommend</div>
+      <div class="forms"><div>recomendé</div><div>recomendaste</div><div>recomendó</div><div>recomendamos</div><div>recomendaron</div><div>recomendaron</div></div>
+      <div class="hint">(preterite)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Recordar (keep red) -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Recordar"><div class="card-inner">
+    <div class="card-face front irregular">Recordar</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to remember</div>
+      <div class="forms"><div>recordé</div><div>recordaste</div><div>recordó</div><div>recordamos</div><div>recordaron</div><div>recordaron</div></div>
+      <div class="hint">(preterite)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Regresar -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Regresar"><div class="card-inner">
+    <div class="card-face front">Regresar</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to return / to go back</div>
+      <div class="forms"><div>regresé</div><div>regresaste</div><div>regresó</div><div>regresamos</div><div>regresaron</div><div>regresaron</div></div>
+      <div class="hint">(preterite)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Repetir (irregular 3rd persons) -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Repetir"><div class="card-inner">
+    <div class="card-face front irregular">Repetir</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to repeat</div>
+      <div class="forms"><div>repetí</div><div>repetiste</div><div>repitió</div><div>repetimos</div><div>repitieron</div><div>repitieron</div></div>
+      <div class="hint">(preterite — irregular 3rd persons)</div>
+    </div></div>
+  </div></div>
+
+  <!-- S -->
+
+  <!-- Saber (irregular) -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Saber"><div class="card-inner">
+    <div class="card-face front irregular">Saber</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to know (a fact) / to know how</div>
+      <div class="forms"><div>supe</div><div>supiste</div><div>supo</div><div>supimos</div><div>supieron</div><div>supieron</div></div>
+      <div class="hint">(preterite — irregular)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Sacar -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Sacar"><div class="card-inner">
+    <div class="card-face front">Sacar</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to take out</div>
+      <div class="forms"><div>saqué</div><div>sacaste</div><div>sacó</div><div>sacamos</div><div>sacaron</div><div>sacaron</div></div>
+      <div class="hint">(preterite)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Salir (irregular) -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Salir"><div class="card-inner">
+    <div class="card-face front irregular">Salir</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to leave / to go out</div>
+      <div class="forms"><div>salí</div><div>saliste</div><div>salió</div><div>salimos</div><div>salieron</div><div>salieron</div></div>
+      <div class="hint">(preterite)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Seguir (irregular spelling + 3rd persons) -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Seguir"><div class="card-inner">
+    <div class="card-face front irregular">Seguir</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to follow / to continue</div>
+      <div class="forms"><div>seguí</div><div>seguiste</div><div>siguió</div><div>seguimos</div><div>siguieron</div><div>siguieron</div></div>
+      <div class="hint">(preterite — irregular 3rd persons)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Sentirse (irregular 3rd persons) -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Sentirse"><div class="card-inner">
+    <div class="card-face front irregular">Sentirse</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to feel (emotionally)</div>
+      <div class="forms"><div>me sentí</div><div>te sentiste</div><div>se sintió</div><div>nos sentimos</div><div>se sintieron</div><div>se sintieron</div></div>
+      <div class="hint">(preterite — irregular 3rd persons)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Ser (irregular) -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Ser"><div class="card-inner">
+    <div class="card-face front irregular">Ser</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to be (identity / permanent)</div>
+      <div class="forms"><div>fui</div><div>fuiste</div><div>fue</div><div>fuimos</div><div>fueron</div><div>fueron</div></div>
+      <div class="hint">(preterite — irregular)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Servir (irregular 3rd persons) -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Servir"><div class="card-inner">
+    <div class="card-face front irregular">Servir</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to serve</div>
+      <div class="forms"><div>serví</div><div>serviste</div><div>sirvió</div><div>servimos</div><div>sirvieron</div><div>sirvieron</div></div>
+      <div class="hint">(preterite — irregular 3rd persons)</div>
+    </div></div>
+  </div></div>
+
+  <!-- T -->
+
+  <!-- Tener (irregular) -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Tener"><div class="card-inner">
+    <div class="card-face front irregular">Tener</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to have</div>
+      <div class="forms"><div>tuve</div><div>tuviste</div><div>tuvo</div><div>tuvimos</div><div>tuvieron</div><div>tuvieron</div></div>
+      <div class="hint">(preterite — irregular)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Terminar -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Terminar"><div class="card-inner">
+    <div class="card-face front">Terminar</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to finish</div>
+      <div class="forms"><div>terminé</div><div>terminaste</div><div>terminó</div><div>terminamos</div><div>terminaron</div><div>terminaron</div></div>
+      <div class="hint">(preterite)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Tocar -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Tocar"><div class="card-inner">
+    <div class="card-face front">Tocar</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to touch / to play (an instrument)</div>
+      <div class="forms"><div>toqué</div><div>tocaste</div><div>tocó</div><div>tocamos</div><div>tocaron</div><div>tocaron</div></div>
+      <div class="hint">(preterite)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Tomar -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Tomar"><div class="card-inner">
+    <div class="card-face front">Tomar</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to take / to drink</div>
+      <div class="forms"><div>tomé</div><div>tomaste</div><div>tomó</div><div>tomamos</div><div>tomaron</div><div>tomaron</div></div>
+      <div class="hint">(preterite)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Trabajar -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Trabajar"><div class="card-inner">
+    <div class="card-face front">Trabajar</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to work</div>
+      <div class="forms"><div>trabajé</div><div>trabajaste</div><div>trabajó</div><div>trabajamos</div><div>trabajaron</div><div>trabajaron</div></div>
+      <div class="hint">(preterite)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Traer (irregular) -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Traer"><div class="card-inner">
+    <div class="card-face front irregular">Traer</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to bring</div>
+      <div class="forms"><div>traje</div><div>trajiste</div><div>trajo</div><div>trajimos</div><div>trajeron</div><div>trajeron</div></div>
+      <div class="hint">(preterite — irregular)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Tratar -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Tratar"><div class="card-inner">
+    <div class="card-face front">Tratar</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to try / deal with / treat</div>
+      <div class="forms"><div>traté</div><div>trataste</div><div>trató</div><div>tratamos</div><div>trataron</div><div>trataron</div></div>
+      <div class="hint">(preterite)</div>
+    </div></div>
+  </div></div>
+
+  <!-- U -->
+
+  <!-- Usar -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Usar"><div class="card-inner">
+    <div class="card-face front">Usar</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to use</div>
+      <div class="forms"><div>usé</div><div>usaste</div><div>usó</div><div>usamos</div><div>usaron</div><div>usaron</div></div>
+      <div class="hint">(preterite)</div>
+    </div></div>
+  </div></div>
+
+  <!-- V -->
+
+  <!-- Venir (irregular) -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Venir"><div class="card-inner">
+    <div class="card-face front irregular">Venir</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to come</div>
+      <div class="forms"><div>vine</div><div>viniste</div><div>vino</div><div>vinimos</div><div>vinieron</div><div>vinieron</div></div>
+      <div class="hint">(preterite — irregular)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Ver (irregular) -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Ver"><div class="card-inner">
+    <div class="card-face front irregular">Ver</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to see</div>
+      <div class="forms"><div>vi</div><div>viste</div><div>vio</div><div>vimos</div><div>vieron</div><div>vieron</div></div>
+      <div class="hint">(preterite — irregular)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Viajar -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Viajar"><div class="card-inner">
+    <div class="card-face front">Viajar</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to travel</div>
+      <div class="forms"><div>viajé</div><div>viajaste</div><div>viajó</div><div>viajamos</div><div>viajaron</div><div>viajaron</div></div>
+      <div class="hint">(preterite)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Visitar -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Visitar"><div class="card-inner">
+    <div class="card-face front">Visitar</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to visit</div>
+      <div class="forms"><div>visité</div><div>visitaste</div><div>visitó</div><div>visitamos</div><div>visitaron</div><div>visitaron</div></div>
+      <div class="hint">(preterite)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Vivir -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Vivir"><div class="card-inner">
+    <div class="card-face front">Vivir</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to live</div>
+      <div class="forms"><div>viví</div><div>viviste</div><div>vivió</div><div>vivimos</div><div>vivieron</div><div>vivieron</div></div>
+      <div class="hint">(preterite)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Volver (irregular present; keep red) -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Volver"><div class="card-inner">
+    <div class="card-face front irregular">Volver</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to return / to come back</div>
+      <div class="forms"><div>volví</div><div>volviste</div><div>volvió</div><div>volvimos</div><div>volvieron</div><div>volvieron</div></div>
+      <div class="hint">(preterite)</div>
+    </div></div>
+  </div></div>
+
+<script>
+  function toggleFlip(card){ card.classList.toggle("flipped"); }
+
+  document.querySelectorAll(".card").forEach(card => {
+    card.addEventListener("click", () => toggleFlip(card));
+    card.addEventListener("touchstart", (e) => {
+      e.preventDefault(); // prevent double-trigger (touch + click)
+      toggleFlip(card);
+    }, { passive: false });
+
+    card.addEventListener("keydown", (e) => {
+      if (e.key === "Enter" || e.key === " ") {
+        e.preventDefault();
+        toggleFlip(card);
+      }
+    });
+  });
+</script>
+
+</body>
+</html>

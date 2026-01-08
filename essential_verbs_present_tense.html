@@ -1,0 +1,1082 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Spanish Verb Flashcards — Present Tense (Irregulars in Red)</title>
+
+  <style>
+    :root { --card-w: 240px; --card-h: 190px; }
+
+    body{
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      background:#f5f5f5;
+      margin:0;
+      padding:2rem;
+      display:flex;
+      flex-wrap:wrap;
+      justify-content:center;
+      gap:1rem;
+    }
+
+    .card{
+      width:var(--card-w);
+      height:var(--card-h);
+      perspective:1000px;
+      cursor:pointer;
+      user-select:none;
+      -webkit-tap-highlight-color:transparent;
+      outline:none;
+    }
+
+    .card-inner{
+      width:100%;
+      height:100%;
+      position:relative;
+      transform-style:preserve-3d;
+      transition:transform 0.6s;
+      border-radius:14px;
+      box-shadow:0 8px 20px rgba(0,0,0,0.12);
+    }
+
+    .card.flipped .card-inner{ transform:rotateY(180deg); }
+
+    .card-face{
+      position:absolute;
+      inset:0;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:14px;
+      border-radius:14px;
+      backface-visibility:hidden;
+      -webkit-backface-visibility:hidden;
+    }
+
+    .front{
+      background:#ffffff;
+      font-size:1.6rem;
+      font-weight:800;
+      text-align:center;
+      color:#111827;
+    }
+
+    /* Irregular verbs: front text in red */
+    .front.irregular{
+      color:#b91c1c;
+    }
+
+    .back{
+      background:#111827;
+      color:#ffffff;
+      transform:rotateY(180deg);
+      font-size:1rem;
+      align-items:flex-start;
+      justify-content:flex-start;
+      text-align:left;
+    }
+
+    .content{
+      width:100%;
+      display:flex;
+      flex-direction:column;
+      gap:8px;
+    }
+
+    .definition{
+      font-size:1.05rem;
+      font-weight:800;
+      line-height:1.2;
+      padding-bottom:6px;
+      border-bottom:1px solid rgba(255,255,255,0.18);
+    }
+
+    .forms{
+      display:grid;
+      grid-template-columns:1fr;
+      gap:4px;
+      font-weight:650;
+      letter-spacing:0.2px;
+    }
+
+    .hint{
+      font-size:0.8rem;
+      opacity:0.7;
+      font-weight:500;
+      margin-top:2px;
+    }
+
+    @media (max-width:520px){
+      :root{ --card-w:92vw; --card-h:200px; }
+      body{ padding:1rem; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ===== A ===== -->
+
+  <!-- Abrir -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Abrir"><div class="card-inner">
+    <div class="card-face front">Abrir</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to open</div>
+      <div class="forms"><div>abro</div><div>abres</div><div>abre</div><div>abrimos</div><div>abren</div><div>abren</div></div>
+      <div class="hint">(present tense)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Acostarse (irregular; you wrote "acostarce") -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Acostarse"><div class="card-inner">
+    <div class="card-face front irregular">Acostarse</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to go to bed</div>
+      <div class="forms"><div>me acuesto</div><div>te acuestas</div><div>se acuesta</div><div>nos acostamos</div><div>se acuestan</div><div>se acuestan</div></div>
+      <div class="hint">(present tense — irregular)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Aprender -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Aprender"><div class="card-inner">
+    <div class="card-face front">Aprender</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to learn</div>
+      <div class="forms"><div>aprendo</div><div>aprendes</div><div>aprende</div><div>aprendemos</div><div>aprenden</div><div>aprenden</div></div>
+      <div class="hint">(present tense)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Arreglar -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Arreglar"><div class="card-inner">
+    <div class="card-face front">Arreglar</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to fix / arrange</div>
+      <div class="forms"><div>arreglo</div><div>arreglas</div><div>arregla</div><div>arreglamos</div><div>arreglan</div><div>arreglan</div></div>
+      <div class="hint">(present tense)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Ayudar -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Ayudar"><div class="card-inner">
+    <div class="card-face front">Ayudar</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to help</div>
+      <div class="forms"><div>ayudo</div><div>ayudas</div><div>ayuda</div><div>ayudamos</div><div>ayudan</div><div>ayudan</div></div>
+      <div class="hint">(present tense)</div>
+    </div></div>
+  </div></div>
+
+  <!-- ===== B ===== -->
+
+  <!-- Bailar -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Bailar"><div class="card-inner">
+    <div class="card-face front">Bailar</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to dance</div>
+      <div class="forms"><div>bailo</div><div>bailas</div><div>baila</div><div>bailamos</div><div>bailan</div><div>bailan</div></div>
+      <div class="hint">(present tense)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Beber -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Beber"><div class="card-inner">
+    <div class="card-face front">Beber</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to drink</div>
+      <div class="forms"><div>bebo</div><div>bebes</div><div>bebe</div><div>bebemos</div><div>beben</div><div>beben</div></div>
+      <div class="hint">(present tense)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Buscar -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Buscar"><div class="card-inner">
+    <div class="card-face front">Buscar</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to look for</div>
+      <div class="forms"><div>busco</div><div>buscas</div><div>busca</div><div>buscamos</div><div>buscan</div><div>buscan</div></div>
+      <div class="hint">(present tense)</div>
+    </div></div>
+  </div></div>
+
+  <!-- ===== C ===== -->
+
+  <!-- Caminar -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Caminar"><div class="card-inner">
+    <div class="card-face front">Caminar</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to walk</div>
+      <div class="forms"><div>camino</div><div>caminas</div><div>camina</div><div>caminamos</div><div>caminan</div><div>caminan</div></div>
+      <div class="hint">(present tense)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Cargar -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Cargar"><div class="card-inner">
+    <div class="card-face front">Cargar</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to carry / load / charge</div>
+      <div class="forms"><div>cargo</div><div>cargas</div><div>carga</div><div>cargamos</div><div>cargan</div><div>cargan</div></div>
+      <div class="hint">(present tense)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Cerrar (irregular) -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Cerrar"><div class="card-inner">
+    <div class="card-face front irregular">Cerrar</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to close</div>
+      <div class="forms"><div>cierro</div><div>cierras</div><div>cierra</div><div>cerramos</div><div>cierran</div><div>cierran</div></div>
+      <div class="hint">(present tense — irregular)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Cocinar -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Cocinar"><div class="card-inner">
+    <div class="card-face front">Cocinar</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to cook</div>
+      <div class="forms"><div>cocino</div><div>cocinas</div><div>cocina</div><div>cocinamos</div><div>cocinan</div><div>cocinan</div></div>
+      <div class="hint">(present tense)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Comer -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Comer"><div class="card-inner">
+    <div class="card-face front">Comer</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to eat</div>
+      <div class="forms"><div>como</div><div>comes</div><div>come</div><div>comemos</div><div>comen</div><div>comen</div></div>
+      <div class="hint">(present tense)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Comprar -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Comprar"><div class="card-inner">
+    <div class="card-face front">Comprar</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to buy</div>
+      <div class="forms"><div>compro</div><div>compras</div><div>compra</div><div>compramos</div><div>compran</div><div>compran</div></div>
+      <div class="hint">(present tense)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Conocer (irregular yo-form) -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Conocer"><div class="card-inner">
+    <div class="card-face front irregular">Conocer</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to know (a person/place)</div>
+      <div class="forms"><div>conozco</div><div>conoces</div><div>conoce</div><div>conocemos</div><div>conocen</div><div>conocen</div></div>
+      <div class="hint">(present tense — irregular)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Contar (irregular) -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Contar"><div class="card-inner">
+    <div class="card-face front irregular">Contar</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to count / to tell</div>
+      <div class="forms"><div>cuento</div><div>cuentas</div><div>cuenta</div><div>contamos</div><div>cuentan</div><div>cuentan</div></div>
+      <div class="hint">(present tense — irregular)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Contestar -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Contestar"><div class="card-inner">
+    <div class="card-face front">Contestar</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to answer</div>
+      <div class="forms"><div>contesto</div><div>contestas</div><div>contesta</div><div>contestamos</div><div>contestan</div><div>contestan</div></div>
+      <div class="hint">(present tense)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Correr -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Correr"><div class="card-inner">
+    <div class="card-face front">Correr</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to run</div>
+      <div class="forms"><div>corro</div><div>corres</div><div>corre</div><div>corremos</div><div>corren</div><div>corren</div></div>
+      <div class="hint">(present tense)</div>
+    </div></div>
+  </div></div>
+
+  <!-- ===== D ===== -->
+
+  <!-- Dar (irregular) -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Dar"><div class="card-inner">
+    <div class="card-face front irregular">Dar</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to give</div>
+      <div class="forms"><div>doy</div><div>das</div><div>da</div><div>damos</div><div>dan</div><div>dan</div></div>
+      <div class="hint">(present tense — irregular)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Decir (irregular) -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Decir"><div class="card-inner">
+    <div class="card-face front irregular">Decir</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to say / to tell</div>
+      <div class="forms"><div>digo</div><div>dices</div><div>dice</div><div>decimos</div><div>dicen</div><div>dicen</div></div>
+      <div class="hint">(present tense — irregular)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Dejar -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Dejar"><div class="card-inner">
+    <div class="card-face front">Dejar</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to leave / to let</div>
+      <div class="forms"><div>dejo</div><div>dejas</div><div>deja</div><div>dejamos</div><div>dejan</div><div>dejan</div></div>
+      <div class="hint">(present tense)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Descansar -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Descansar"><div class="card-inner">
+    <div class="card-face front">Descansar</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to rest</div>
+      <div class="forms"><div>descanso</div><div>descansas</div><div>descansa</div><div>descansamos</div><div>descansan</div><div>descansan</div></div>
+      <div class="hint">(present tense)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Despertar (irregular) -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Despertar"><div class="card-inner">
+    <div class="card-face front irregular">Despertar</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to wake up</div>
+      <div class="forms"><div>despierto</div><div>despiertas</div><div>despierta</div><div>despertamos</div><div>despiertan</div><div>despiertan</div></div>
+      <div class="hint">(present tense — irregular)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Dormir (irregular) -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Dormir"><div class="card-inner">
+    <div class="card-face front irregular">Dormir</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to sleep</div>
+      <div class="forms"><div>duermo</div><div>duermes</div><div>duerme</div><div>dormimos</div><div>duermen</div><div>duermen</div></div>
+      <div class="hint">(present tense — irregular)</div>
+    </div></div>
+  </div></div>
+
+  <!-- ===== E ===== -->
+
+  <!-- Empezar (irregular) -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Empezar"><div class="card-inner">
+    <div class="card-face front irregular">Empezar</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to begin / to start</div>
+      <div class="forms"><div>empiezo</div><div>empiezas</div><div>empieza</div><div>empezamos</div><div>empiezan</div><div>empiezan</div></div>
+      <div class="hint">(present tense — irregular)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Encontrar (irregular) -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Encontrar"><div class="card-inner">
+    <div class="card-face front irregular">Encontrar</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to find</div>
+      <div class="forms"><div>encuentro</div><div>encuentras</div><div>encuentra</div><div>encontramos</div><div>encuentran</div><div>encuentran</div></div>
+      <div class="hint">(present tense — irregular)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Enseñar -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Enseñar"><div class="card-inner">
+    <div class="card-face front">Enseñar</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to teach</div>
+      <div class="forms"><div>enseño</div><div>enseñas</div><div>enseña</div><div>enseñamos</div><div>enseñan</div><div>enseñan</div></div>
+      <div class="hint">(present tense)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Entender (irregular stem-change; you previously typed "entendar") -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Entender"><div class="card-inner">
+    <div class="card-face front irregular">Entender</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to understand</div>
+      <div class="forms"><div>entiendo</div><div>entiendes</div><div>entiende</div><div>entendemos</div><div>entienden</div><div>entienden</div></div>
+      <div class="hint">(present tense — irregular)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Escribir -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Escribir"><div class="card-inner">
+    <div class="card-face front">Escribir</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to write</div>
+      <div class="forms"><div>escribo</div><div>escribes</div><div>escribe</div><div>escribimos</div><div>escriben</div><div>escriben</div></div>
+      <div class="hint">(present tense)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Escuchar -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Escuchar"><div class="card-inner">
+    <div class="card-face front">Escuchar</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to listen</div>
+      <div class="forms"><div>escucho</div><div>escuchas</div><div>escucha</div><div>escuchamos</div><div>escuchan</div><div>escuchan</div></div>
+      <div class="hint">(present tense)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Esperar -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Esperar"><div class="card-inner">
+    <div class="card-face front">Esperar</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to wait / to hope</div>
+      <div class="forms"><div>espero</div><div>esperas</div><div>espera</div><div>esperamos</div><div>esperan</div><div>esperan</div></div>
+      <div class="hint">(present tense)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Estar (irregular) -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Estar"><div class="card-inner">
+    <div class="card-face front irregular">Estar</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to be (state / temporary)</div>
+      <div class="forms"><div>estoy</div><div>estás</div><div>está</div><div>estamos</div><div>están</div><div>están</div></div>
+      <div class="hint">(present tense — irregular)</div>
+    </div></div>
+  </div></div>
+
+  <!-- ===== G ===== -->
+
+  <!-- Ganar -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Ganar"><div class="card-inner">
+    <div class="card-face front">Ganar</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to win / to earn</div>
+      <div class="forms"><div>gano</div><div>ganas</div><div>gana</div><div>ganamos</div><div>ganan</div><div>ganan</div></div>
+      <div class="hint">(present tense)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Gastar -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Gastar"><div class="card-inner">
+    <div class="card-face front">Gastar</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to spend (money)</div>
+      <div class="forms"><div>gasto</div><div>gastas</div><div>gasta</div><div>gastamos</div><div>gastan</div><div>gastan</div></div>
+      <div class="hint">(present tense)</div>
+    </div></div>
+  </div></div>
+
+  <!-- ===== H ===== -->
+
+  <!-- Haber (irregular) -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Haber"><div class="card-inner">
+    <div class="card-face front irregular">Haber</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to have (auxiliary); there is/are (hay)</div>
+      <div class="forms"><div>he</div><div>has</div><div>ha</div><div>hemos</div><div>han</div><div>han</div></div>
+      <div class="hint">(present tense — irregular)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Hablar -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Hablar"><div class="card-inner">
+    <div class="card-face front">Hablar</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to speak / to talk</div>
+      <div class="forms"><div>hablo</div><div>hablas</div><div>habla</div><div>hablamos</div><div>hablan</div><div>hablan</div></div>
+      <div class="hint">(present tense)</div>
+    </div></div>
+  </div></div>
+
+  <!-- ===== I ===== -->
+
+  <!-- Invitar -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Invitar"><div class="card-inner">
+    <div class="card-face front">Invitar</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to invite</div>
+      <div class="forms"><div>invito</div><div>invitas</div><div>invita</div><div>invitamos</div><div>invitan</div><div>invitan</div></div>
+      <div class="hint">(present tense)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Ir (irregular) -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Ir"><div class="card-inner">
+    <div class="card-face front irregular">Ir</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to go</div>
+      <div class="forms"><div>voy</div><div>vas</div><div>va</div><div>vamos</div><div>van</div><div>van</div></div>
+      <div class="hint">(present tense — irregular)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Irse (irregular) -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Irse"><div class="card-inner">
+    <div class="card-face front irregular">Irse</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to leave / to go away</div>
+      <div class="forms"><div>me voy</div><div>te vas</div><div>se va</div><div>nos vamos</div><div>se van</div><div>se van</div></div>
+      <div class="hint">(present tense — irregular)</div>
+    </div></div>
+  </div></div>
+
+  <!-- ===== J ===== -->
+
+  <!-- Jalar -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Jalar"><div class="card-inner">
+    <div class="card-face front">Jalar</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to pull</div>
+      <div class="forms"><div>jalo</div><div>jalas</div><div>jala</div><div>jalamos</div><div>jalan</div><div>jalan</div></div>
+      <div class="hint">(present tense)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Jugar (irregular) -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Jugar"><div class="card-inner">
+    <div class="card-face front irregular">Jugar</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to play (a game / sport)</div>
+      <div class="forms"><div>juego</div><div>juegas</div><div>juega</div><div>jugamos</div><div>juegan</div><div>juegan</div></div>
+      <div class="hint">(present tense — irregular)</div>
+    </div></div>
+  </div></div>
+
+  <!-- ===== L ===== -->
+
+  <!-- Lavar -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Lavar"><div class="card-inner">
+    <div class="card-face front">Lavar</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to wash</div>
+      <div class="forms"><div>lavo</div><div>lavas</div><div>lava</div><div>lavamos</div><div>lavan</div><div>lavan</div></div>
+      <div class="hint">(present tense)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Levantarse (irregular stem-change) -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Levantarse"><div class="card-inner">
+    <div class="card-face front irregular">Levantarse</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to get up</div>
+      <div class="forms"><div>me levanto</div><div>te levantas</div><div>se levanta</div><div>nos levantamos</div><div>se levantan</div><div>se levantan</div></div>
+      <div class="hint">(present tense — irregular)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Llegar -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Llegar"><div class="card-inner">
+    <div class="card-face front">Llegar</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to arrive</div>
+      <div class="forms"><div>llego</div><div>llegas</div><div>llega</div><div>llegamos</div><div>llegan</div><div>llegan</div></div>
+      <div class="hint">(present tense)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Llevar -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Llevar"><div class="card-inner">
+    <div class="card-face front">Llevar</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to carry / to take / to wear</div>
+      <div class="forms"><div>llevo</div><div>llevas</div><div>lleva</div><div>llevamos</div><div>llevan</div><div>llevan</div></div>
+      <div class="hint">(present tense)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Limpiar -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Limpiar"><div class="card-inner">
+    <div class="card-face front">Limpiar</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to clean</div>
+      <div class="forms"><div>limpio</div><div>limpias</div><div>limpia</div><div>limpiamos</div><div>limpian</div><div>limpian</div></div>
+      <div class="hint">(present tense)</div>
+    </div></div>
+  </div></div>
+
+  <!-- ===== M ===== -->
+
+  <!-- Manejar -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Manejar"><div class="card-inner">
+    <div class="card-face front">Manejar</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to drive / to handle</div>
+      <div class="forms"><div>manejo</div><div>manejas</div><div>maneja</div><div>manejamos</div><div>manejan</div><div>manejan</div></div>
+      <div class="hint">(present tense)</div>
+    </div></div>
+  </div></div>
+
+  <!-- ===== N ===== -->
+
+  <!-- Necesitar -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Necesitar"><div class="card-inner">
+    <div class="card-face front">Necesitar</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to need</div>
+      <div class="forms"><div>necesito</div><div>necesitas</div><div>necesita</div><div>necesitamos</div><div>necesitan</div><div>necesitan</div></div>
+      <div class="hint">(present tense)</div>
+    </div></div>
+  </div></div>
+
+  <!-- ===== O ===== -->
+
+  <!-- Oír (irregular) -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Oír"><div class="card-inner">
+    <div class="card-face front irregular">Oír</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to hear</div>
+      <div class="forms"><div>oigo</div><div>oyes</div><div>oye</div><div>oímos</div><div>oyen</div><div>oyen</div></div>
+      <div class="hint">(present tense — irregular)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Olvidar -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Olvidar"><div class="card-inner">
+    <div class="card-face front">Olvidar</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to forget</div>
+      <div class="forms"><div>olvido</div><div>olvidas</div><div>olvida</div><div>olvidamos</div><div>olvidan</div><div>olvidan</div></div>
+      <div class="hint">(present tense)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Ordenar -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Ordenar"><div class="card-inner">
+    <div class="card-face front">Ordenar</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to order / to organize</div>
+      <div class="forms"><div>ordeno</div><div>ordenas</div><div>ordena</div><div>ordenamos</div><div>ordenan</div><div>ordenan</div></div>
+      <div class="hint">(present tense)</div>
+    </div></div>
+  </div></div>
+
+  <!-- ===== P ===== -->
+
+  <!-- Pagar -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Pagar"><div class="card-inner">
+    <div class="card-face front">Pagar</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to pay</div>
+      <div class="forms"><div>pago</div><div>pagas</div><div>paga</div><div>pagamos</div><div>pagan</div><div>pagan</div></div>
+      <div class="hint">(present tense)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Pasar -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Pasar"><div class="card-inner">
+    <div class="card-face front">Pasar</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to pass / to spend (time)</div>
+      <div class="forms"><div>paso</div><div>pasas</div><div>pasa</div><div>pasamos</div><div>pasan</div><div>pasan</div></div>
+      <div class="hint">(present tense)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Pedir (irregular) -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Pedir"><div class="card-inner">
+    <div class="card-face front irregular">Pedir</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to ask for / to order</div>
+      <div class="forms"><div>pido</div><div>pides</div><div>pide</div><div>pedimos</div><div>piden</div><div>piden</div></div>
+      <div class="hint">(present tense — irregular)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Pensar (irregular) -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Pensar"><div class="card-inner">
+    <div class="card-face front irregular">Pensar</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to think</div>
+      <div class="forms"><div>pienso</div><div>piensas</div><div>piensa</div><div>pensamos</div><div>piensan</div><div>piensan</div></div>
+      <div class="hint">(present tense — irregular)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Platicar -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Platicar"><div class="card-inner">
+    <div class="card-face front">Platicar</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to chat / to talk</div>
+      <div class="forms"><div>platico</div><div>platicas</div><div>platica</div><div>platicamos</div><div>platican</div><div>platican</div></div>
+      <div class="hint">(present tense)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Poner (irregular yo-form) -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Poner"><div class="card-inner">
+    <div class="card-face front irregular">Poner</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to put / to place</div>
+      <div class="forms"><div>pongo</div><div>pones</div><div>pone</div><div>ponemos</div><div>ponen</div><div>ponen</div></div>
+      <div class="hint">(present tense — irregular)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Poder (irregular) -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Poder"><div class="card-inner">
+    <div class="card-face front irregular">Poder</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to be able to / can</div>
+      <div class="forms"><div>puedo</div><div>puedes</div><div>puede</div><div>podemos</div><div>pueden</div><div>pueden</div></div>
+      <div class="hint">(present tense — irregular)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Preferir (irregular) -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Preferir"><div class="card-inner">
+    <div class="card-face front irregular">Preferir</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to prefer</div>
+      <div class="forms"><div>prefiero</div><div>prefieres</div><div>prefiere</div><div>preferimos</div><div>prefieren</div><div>prefieren</div></div>
+      <div class="hint">(present tense — irregular)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Preguntar -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Preguntar"><div class="card-inner">
+    <div class="card-face front">Preguntar</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to ask (a question)</div>
+      <div class="forms"><div>pregunto</div><div>preguntas</div><div>pregunta</div><div>preguntamos</div><div>preguntan</div><div>preguntan</div></div>
+      <div class="hint">(present tense)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Preparar -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Preparar"><div class="card-inner">
+    <div class="card-face front">Preparar</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to prepare</div>
+      <div class="forms"><div>preparo</div><div>preparas</div><div>prepara</div><div>preparamos</div><div>preparan</div><div>preparan</div></div>
+      <div class="hint">(present tense)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Presentar -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Presentar"><div class="card-inner">
+    <div class="card-face front">Presentar</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to present / to introduce</div>
+      <div class="forms"><div>presento</div><div>presentas</div><div>presenta</div><div>presentamos</div><div>presentan</div><div>presentan</div></div>
+      <div class="hint">(present tense)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Probar (irregular) -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Probar"><div class="card-inner">
+    <div class="card-face front irregular">Probar</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to try / to taste</div>
+      <div class="forms"><div>pruebo</div><div>pruebas</div><div>prueba</div><div>probamos</div><div>prueban</div><div>prueban</div></div>
+      <div class="hint">(present tense — irregular)</div>
+    </div></div>
+  </div></div>
+
+  <!-- ===== Q ===== -->
+
+  <!-- Querer (irregular) -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Querer"><div class="card-inner">
+    <div class="card-face front irregular">Querer</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to want / to love</div>
+      <div class="forms"><div>quiero</div><div>quieres</div><div>quiere</div><div>queremos</div><div>quieren</div><div>quieren</div></div>
+      <div class="hint">(present tense — irregular)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Quitar -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Quitar"><div class="card-inner">
+    <div class="card-face front">Quitar</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to remove / to take off</div>
+      <div class="forms"><div>quito</div><div>quitas</div><div>quita</div><div>quitamos</div><div>quitan</div><div>quitan</div></div>
+      <div class="hint">(present tense)</div>
+    </div></div>
+  </div></div>
+
+  <!-- ===== R ===== -->
+
+  <!-- Recomendar (irregular) -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Recomendar"><div class="card-inner">
+    <div class="card-face front irregular">Recomendar</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to recommend</div>
+      <div class="forms"><div>recomiendo</div><div>recomiendas</div><div>recomienda</div><div>recomendamos</div><div>recomiendan</div><div>recomiendan</div></div>
+      <div class="hint">(present tense — irregular)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Recordar (irregular) -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Recordar"><div class="card-inner">
+    <div class="card-face front irregular">Recordar</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to remember</div>
+      <div class="forms"><div>recuerdo</div><div>recuerdas</div><div>recuerda</div><div>recordamos</div><div>recuerdan</div><div>recuerdan</div></div>
+      <div class="hint">(present tense — irregular)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Regresar -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Regresar"><div class="card-inner">
+    <div class="card-face front">Regresar</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to return / to go back</div>
+      <div class="forms"><div>regreso</div><div>regresas</div><div>regresa</div><div>regresamos</div><div>regresan</div><div>regresan</div></div>
+      <div class="hint">(present tense)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Repetir (irregular) -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Repetir"><div class="card-inner">
+    <div class="card-face front irregular">Repetir</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to repeat</div>
+      <div class="forms"><div>repito</div><div>repites</div><div>repite</div><div>repetimos</div><div>repiten</div><div>repiten</div></div>
+      <div class="hint">(present tense — irregular)</div>
+    </div></div>
+  </div></div>
+
+  <!-- ===== S ===== -->
+
+  <!-- Saber (irregular) -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Saber"><div class="card-inner">
+    <div class="card-face front irregular">Saber</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to know (a fact) / to know how</div>
+      <div class="forms"><div>sé</div><div>sabes</div><div>sabe</div><div>sabemos</div><div>saben</div><div>saben</div></div>
+      <div class="hint">(present tense — irregular)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Sacar -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Sacar"><div class="card-inner">
+    <div class="card-face front">Sacar</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to take out</div>
+      <div class="forms"><div>saco</div><div>sacas</div><div>saca</div><div>sacamos</div><div>sacan</div><div>sacan</div></div>
+      <div class="hint">(present tense)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Salir (irregular) -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Salir"><div class="card-inner">
+    <div class="card-face front irregular">Salir</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to leave / to go out</div>
+      <div class="forms"><div>salgo</div><div>sales</div><div>sale</div><div>salimos</div><div>salen</div><div>salen</div></div>
+      <div class="hint">(present tense — irregular)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Seguir (irregular) -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Seguir"><div class="card-inner">
+    <div class="card-face front irregular">Seguir</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to follow / to continue</div>
+      <div class="forms"><div>sigo</div><div>sigues</div><div>sigue</div><div>seguimos</div><div>siguen</div><div>siguen</div></div>
+      <div class="hint">(present tense — irregular)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Sentirse (irregular) -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Sentirse"><div class="card-inner">
+    <div class="card-face front irregular">Sentirse</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to feel (emotionally)</div>
+      <div class="forms"><div>me siento</div><div>te sientes</div><div>se siente</div><div>nos sentimos</div><div>se sienten</div><div>se sienten</div></div>
+      <div class="hint">(present tense — irregular)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Ser (irregular) -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Ser"><div class="card-inner">
+    <div class="card-face front irregular">Ser</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to be (identity / permanent)</div>
+      <div class="forms"><div>soy</div><div>eres</div><div>es</div><div>somos</div><div>son</div><div>son</div></div>
+      <div class="hint">(present tense — irregular)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Servir (irregular) -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Servir"><div class="card-inner">
+    <div class="card-face front irregular">Servir</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to serve</div>
+      <div class="forms"><div>sirvo</div><div>sirves</div><div>sirve</div><div>servimos</div><div>sirven</div><div>sirven</div></div>
+      <div class="hint">(present tense — irregular)</div>
+    </div></div>
+  </div></div>
+
+  <!-- ===== T ===== -->
+
+  <!-- Tener (irregular) -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Tener"><div class="card-inner">
+    <div class="card-face front irregular">Tener</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to have</div>
+      <div class="forms"><div>tengo</div><div>tienes</div><div>tiene</div><div>tenemos</div><div>tienen</div><div>tienen</div></div>
+      <div class="hint">(present tense — irregular)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Terminar -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Terminar"><div class="card-inner">
+    <div class="card-face front">Terminar</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to finish</div>
+      <div class="forms"><div>termino</div><div>terminas</div><div>termina</div><div>terminamos</div><div>terminan</div><div>terminan</div></div>
+      <div class="hint">(present tense)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Tocar -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Tocar"><div class="card-inner">
+    <div class="card-face front">Tocar</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to touch / to play (an instrument)</div>
+      <div class="forms"><div>toco</div><div>tocas</div><div>toca</div><div>tocamos</div><div>tocan</div><div>tocan</div></div>
+      <div class="hint">(present tense)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Tomar -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Tomar"><div class="card-inner">
+    <div class="card-face front">Tomar</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to take / to drink</div>
+      <div class="forms"><div>tomo</div><div>tomas</div><div>toma</div><div>tomamos</div><div>toman</div><div>toman</div></div>
+      <div class="hint">(present tense)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Trabajar -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Trabajar"><div class="card-inner">
+    <div class="card-face front">Trabajar</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to work</div>
+      <div class="forms"><div>trabajo</div><div>trabajas</div><div>trabaja</div><div>trabajamos</div><div>trabajan</div><div>trabajan</div></div>
+      <div class="hint">(present tense)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Traer (irregular) -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Traer"><div class="card-inner">
+    <div class="card-face front irregular">Traer</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to bring</div>
+      <div class="forms"><div>traigo</div><div>traes</div><div>trae</div><div>traemos</div><div>traen</div><div>traen</div></div>
+      <div class="hint">(present tense — irregular)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Tratar -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Tratar"><div class="card-inner">
+    <div class="card-face front">Tratar</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to try / deal with / treat</div>
+      <div class="forms"><div>trato</div><div>tratas</div><div>trata</div><div>tratamos</div><div>tratan</div><div>tratan</div></div>
+      <div class="hint">(present tense)</div>
+    </div></div>
+  </div></div>
+
+  <!-- ===== U ===== -->
+
+  <!-- Usar -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Usar"><div class="card-inner">
+    <div class="card-face front">Usar</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to use</div>
+      <div class="forms"><div>uso</div><div>usas</div><div>usa</div><div>usamos</div><div>usan</div><div>usan</div></div>
+      <div class="hint">(present tense)</div>
+    </div></div>
+  </div></div>
+
+  <!-- ===== V ===== -->
+
+  <!-- Venir (irregular) -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Venir"><div class="card-inner">
+    <div class="card-face front irregular">Venir</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to come</div>
+      <div class="forms"><div>vengo</div><div>vienes</div><div>viene</div><div>venimos</div><div>vienen</div><div>vienen</div></div>
+      <div class="hint">(present tense — irregular)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Ver (irregular) -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Ver"><div class="card-inner">
+    <div class="card-face front irregular">Ver</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to see</div>
+      <div class="forms"><div>veo</div><div>ves</div><div>ve</div><div>vemos</div><div>ven</div><div>ven</div></div>
+      <div class="hint">(present tense — irregular)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Viajar -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Viajar"><div class="card-inner">
+    <div class="card-face front">Viajar</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to travel</div>
+      <div class="forms"><div>viajo</div><div>viajas</div><div>viaja</div><div>viajamos</div><div>viajan</div><div>viajan</div></div>
+      <div class="hint">(present tense)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Visitar -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Visitar"><div class="card-inner">
+    <div class="card-face front">Visitar</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to visit</div>
+      <div class="forms"><div>visito</div><div>visitas</div><div>visita</div><div>visitamos</div><div>visitan</div><div>visitan</div></div>
+      <div class="hint">(present tense)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Volver (irregular) -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Volver"><div class="card-inner">
+    <div class="card-face front irregular">Volver</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to return / to come back</div>
+      <div class="forms"><div>vuelvo</div><div>vuelves</div><div>vuelve</div><div>volvemos</div><div>vuelven</div><div>vuelven</div></div>
+      <div class="hint">(present tense — irregular)</div>
+    </div></div>
+  </div></div>
+
+  <!-- Vivir -->
+  <div class="card" tabindex="0" role="button" aria-label="Flashcard: Vivir"><div class="card-inner">
+    <div class="card-face front">Vivir</div>
+    <div class="card-face back"><div class="content">
+      <div class="definition">to live</div>
+      <div class="forms"><div>vivo</div><div>vives</div><div>vive</div><div>vivimos</div><div>viven</div><div>viven</div></div>
+      <div class="hint">(present tense)</div>
+    </div></div>
+  </div></div>
+
+  <!-- ===== (Other irregulars already included earlier in your lists) ===== -->
+
+  <!-- Note: If you want ANY other verbs from your earlier sets added back in (like Llevar, Limpiar, etc.) they are already in this file. -->
+
+<script>
+  function toggleFlip(card){ card.classList.toggle("flipped"); }
+
+  document.querySelectorAll(".card").forEach(card => {
+    card.addEventListener("click", () => toggleFlip(card));
+    card.addEventListener("touchstart", (e) => {
+      e.preventDefault(); // prevent double-trigger (touch + click)
+      toggleFlip(card);
+    }, { passive: false });
+
+    card.addEventListener("keydown", (e) => {
+      if (e.key === "Enter" || e.key === " ") {
+        e.preventDefault();
+        toggleFlip(card);
+      }
+    });
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Spanish Flashcards</title>
+  <style>
+    body {
+      font-family: system-ui, sans-serif;
+      background: #f5f5f5;
+      margin: 0;
+      padding: 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+    }
+
+    .card {
+      width: 260px;
+      height: 190px;
+      perspective: 1000px;
+      cursor: pointer;
+    }
+
+    .card-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      transition: transform 0.6s;
+      transform-style: preserve-3d;
+    }
+
+    .card.flipped .card-inner {
+      transform: rotateY(180deg);
+    }
+
+    .card-face {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      padding: 0.75rem;
+      box-sizing: border-box;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      backface-visibility: hidden;
+      text-align: center;
+    }
+
+    .card-front {
+      background: #e9ecff;
+      font-weight: bold;
+      font-size: 1.4rem;
+    }
+
+    .card-back {
+      background: #ffffff;
+      transform: rotateY(180deg);
+      font-size: 0.95rem;
+      line-height: 1.4;
+      white-space: pre-line;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- SER -->
+  <div class="card"><div class="card-inner">
+    <div class="card-face card-front">ser</div>
+    <div class="card-face card-back">
+yo: soy
+tú: eres
+usted: es
+él/ella: es
+nosotros: somos
+ustedes: son
+ellos/ellas: son
+    </div>
+  </div></div>
+
+  <!-- ESTAR -->
+  <div class="card"><div class="card-inner">
+    <div class="card-face card-front">estar</div>
+    <div class="card-face card-back">
+yo: estoy
+tú: estás
+usted: está
+él/ella: está
+nosotros: estamos
+ustedes: están
+ellos/ellas: están
+    </div>
+  </div></div>
+
+  <!-- PREPOSITION A -->
+  <div class="card"><div class="card-inner">
+    <div class="card-face card-front">Preposición “a”</div>
+    <div class="card-face card-back">
+Movimiento: Voy a la tienda.
+Acción: Voy a estudiar.
+Persona / mascota: Veo a mi hermano.
+Hora: A las ocho.
+    </div>
+  </div></div>
+
+  <!-- DEFINITE ARTICLES -->
+  <div class="card"><div class="card-inner">
+    <div class="card-face card-front">Definite Articles</div>
+    <div class="card-face card-back">
+the
+
+el
+la
+los
+las
+    </div>
+  </div></div>
+
+  <!-- INDEFINITE ARTICLES -->
+  <div class="card"><div class="card-inner">
+    <div class="card-face card-front">Indefinite Articles</div>
+    <div class="card-face card-back">
+a / an / some
+
+un
+una
+unos
+unas
+    </div>
+  </div></div>
+
+  <!-- INDIRECT OBJECT PRONOUNS -->
+  <div class="card"><div class="card-inner">
+    <div class="card-face card-front">Indirect Object Pronouns</div>
+    <div class="card-face card-back">
+me – to me
+te – to you
+le – to him, to her, usted
+nos – to us
+les – to them, ustedes
+    </div>
+  </div></div>
+
+  <!-- POR -->
+  <div class="card"><div class="card-inner">
+    <div class="card-face card-front">Por “Why did this happen?”</div>
+    <div class="card-face card-back">
+Reason / motive
+Price / exchange
+Duration of time
+Means / method
+    </div>
+  </div></div>
+
+  <!-- PARA -->
+  <div class="card"><div class="card-inner">
+    <div class="card-face card-front">Para “What is this for?”</div>
+    <div class="card-face card-back">
+Purpose / goal
+Destination
+Deadline
+Intended recipient
+    </div>
+  </div></div>
+
+  <!-- DEMONSTRATIVES -->
+
+  <div class="card"><div class="card-inner">
+    <div class="card-face card-front">este</div>
+    <div class="card-face card-back">this (masc.)<br>Ej: Este libro es interesante.</div>
+  </div></div>
+
+  <div class="card"><div class="card-inner">
+    <div class="card-face card-front">esta</div>
+    <div class="card-face card-back">this (fem.)<br>Ej: Esta casa es grande.</div>
+  </div></div>
+
+  <div class="card"><div class="card-inner">
+    <div class="card-face card-front">estos</div>
+    <div class="card-face card-back">these (masc.)<br>Ej: Estos zapatos son cómodos.</div>
+  </div></div>
+
+  <div class="card"><div class="card-inner">
+    <div class="card-face card-front">estas</div>
+    <div class="card-face card-back">these (fem.)<br>Ej: Estas ideas son excelentes.</div>
+  </div></div>
+
+  <div class="card"><div class="card-inner">
+    <div class="card-face card-front">ese</div>
+    <div class="card-face card-back">that (masc.)<br>Ej: Ese color no me gusta.</div>
+  </div></div>
+
+  <div class="card"><div class="card-inner">
+    <div class="card-face card-front">esa</div>
+    <div class="card-face card-back">that (fem.)<br>Ej: Esa camisa es bonita.</div>
+  </div></div>
+
+  <div class="card"><div class="card-inner">
+    <div class="card-face card-front">esos</div>
+    <div class="card-face card-back">those (masc.)<br>Ej: Esos libros no son nuevos.</div>
+  </div></div>
+
+  <div class="card"><div class="card-inner">
+    <div class="card-face card-front">esas</div>
+    <div class="card-face card-back">those (fem.)<br>Ej: No me gustan esas manzanas.</div>
+  </div></div>
+
+  <div class="card"><div class="card-inner">
+    <div class="card-face card-front">aquel</div>
+    <div class="card-face card-back">that over there (masc.)<br>Ej: Aquel edificio es antiguo.</div>
+  </div></div>
+
+  <div class="card"><div class="card-inner">
+    <div class="card-face card-front">aquella</div>
+    <div class="card-face card-back">that over there (fem.)<br>Ej: Aquella montaña es alta.</div>
+  </div></div>
+
+  <div class="card"><div class="card-inner">
+    <div class="card-face card-front">aquellos</div>
+    <div class="card-face card-back">those over there (masc.)<br>Ej: Aquellos días fueron difíciles.</div>
+  </div></div>
+
+  <div class="card"><div class="card-inner">
+    <div class="card-face card-front">aquellas</div>
+    <div class="card-face card-back">those over there (fem.)<br>Ej: Aquellas flores son hermosas.</div>
+  </div></div>
+
+  <div class="card"><div class="card-inner">
+    <div class="card-face card-front">esto</div>
+    <div class="card-face card-back">this (neuter)<br>Ej: ¿Qué es esto?</div>
+  </div></div>
+
+  <div class="card"><div class="card-inner">
+    <div class="card-face card-front">eso</div>
+    <div class="card-face card-back">that (neuter)<br>Ej: No entiendo eso.</div>
+  </div></div>
+
+  <div class="card"><div class="card-inner">
+    <div class="card-face card-front">aquello</div>
+    <div class="card-face card-back">that over there (neuter)<br>Ej: Aquello fue difícil.</div>
+  </div></div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      document.querySelectorAll(".card").forEach(card => {
+        card.addEventListener("click", () => {
+          card.classList.toggle("flipped");
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>
